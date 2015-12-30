@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xuyihao.administrator.dbdemo" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="图书管理"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="图书管理" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".A"
+            android:label="@string/title_activity_a" >
+        </activity>
+        <activity
+            android:name=".AdActivity"
+            android:label="@string/title_activity_ad" >
+        </activity>
+        <activity
+            android:name=".ReActivity"
+            android:label="@string/title_activity_re" >
+        </activity>
+        <activity
+            android:name="com.xuyihao.administrator.funcmodel.ChangePwdActivity"
+            android:label="密码修改" >
+        </activity>
+        <activity
+            android:name="com.xuyihao.administrator.funcmodel.AddBookActivity"
+            android:label="@string/title_activity_add_book" >
+        </activity>
+        <activity
+            android:name="com.xuyihao.administrator.funcmodel.AddReaderActivity"
+            android:label="@string/title_activity_add_reader" >
+        </activity>
+        <activity
+            android:name="com.xuyihao.administrator.funcmodel.AddAdminActivity"
+            android:label="@string/title_activity_add_admin" >
+        </activity>
+        <activity
+            android:name="com.xuyihao.administrator.funcmodel.LookBookActivity"
+            android:label="@string/title_activity_look_book" >
+        </activity>
+        <activity
+            android:name="com.xuyihao.administrator.funcmodel.LookReaderActivity"
+            android:label="@string/title_activity_look_reader" >
+        </activity>
+        <activity
+            android:name="com.xuyihao.administrator.funcmodel.ReaderDetailInfomationActivity"
+            android:label="@string/title_activity_reader_detail_infomation" >
+        </activity>
+        <activity
+            android:name="com.xuyihao.administrator.funcmodel.AlreadyBorrowChoseReaderActivity"
+            android:label="@string/title_activity_already_borrow_chose_reader" >
+        </activity>
+        <activity
+            android:name="com.xuyihao.administrator.funcmodel.AlreadyBorrowDetilActivity"
+            android:label="@string/title_activity_already_borrow_detil" >
+        </activity>
+        <activity
+            android:name="com.xuyihao.administrator.funcmodel.BorrowBookActivity"
+            android:label="@string/title_activity_borrow_book" >
+        </activity>
+        <activity
+            android:name="com.xuyihao.administrator.funcmodel.ReturnBookActivity"
+            android:label="@string/title_activity_return_book" >
+        </activity>
+        <activity
+            android:name="com.xuyihao.administrator.funcmodel.ReturnBookDetailActivity"
+            android:label="@string/title_activity_return_book_detail" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.xuyihao.administrator.funcmodel.AddReaderActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="读者编号："
+        android:id="@+id/textView9"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editAddReaderRno"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="读者姓名："
+        android:id="@+id/textView10"
+        android:layout_below="@+id/editAddReaderRno"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editAddReaderRname"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_alignLeft="@+id/editAddReaderRno"
+        android:layout_alignStart="@+id/editAddReaderRno"
+        android:layout_alignRight="@+id/editAddReaderRno"
+        android:layout_alignEnd="@+id/editAddReaderRno" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="读者性别："
+        android:id="@+id/textView11"
+        android:layout_below="@+id/editAddReaderRname"
+        android:layout_toLeftOf="@+id/editAddReaderRno"
+        android:layout_toStartOf="@+id/editAddReaderRno" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="读者电话："
+        android:id="@+id/textView12"
+        android:layout_below="@+id/spinnerAddReader"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editAddReaderRphone"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_alignRight="@+id/editAddReaderRno"
+        android:layout_alignEnd="@+id/spinnerAddReader"
+        android:layout_alignLeft="@+id/editAddReaderRno"
+        android:layout_alignStart="@+id/spinnerAddReader" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:id="@+id/btnAddReaderConfirm"
+        android:layout_marginTop="74dp"
+        android:layout_below="@+id/editAddReaderRphone"
+        android:layout_toLeftOf="@+id/editAddReaderRno"
+        android:layout_toStartOf="@+id/editAddReaderRno" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:id="@+id/btnAddReaderCancel"
+        android:layout_alignTop="@+id/btnAddReaderConfirm"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerAddReader"
+        android:layout_below="@+id/editAddReaderRname"
+        android:layout_alignLeft="@+id/editAddReaderRname"
+        android:layout_alignStart="@+id/editAddReaderRname"
+        android:spinnerMode="dropdown" />
+
+</RelativeLayout>

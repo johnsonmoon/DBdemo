@@ -1,0 +1,84 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">00
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:id="@+id/btnlogin"
+        android:layout_below="@+id/editTxtUserPwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:baselineAlignBottom="true"
+        android:clickable="true"
+        android:src="@drawable/touxiang2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退出"
+        android:id="@+id/btnQuit"
+        android:layout_below="@+id/btnlogin"
+        android:layout_alignLeft="@+id/btnlogin"
+        android:layout_alignStart="@+id/btnlogin"
+        android:layout_alignParentBottom="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户编号："
+        android:id="@+id/labelUserNo"
+        android:textColor="#ff000000"
+        android:layout_marginTop="37dp"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView"
+        android:layout_below="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码："
+        android:id="@+id/lableUserPwd"
+        android:textColor="#ff000000"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/labelUserNo"
+        android:layout_alignStart="@+id/labelUserNo"
+        android:layout_toLeftOf="@+id/imageView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTxtUserNo"
+        android:textColor="#ff000000"
+        android:layout_toRightOf="@+id/labelUserNo"
+        android:layout_alignTop="@+id/labelUserNo"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTxtUserPwd"
+        android:selectAllOnFocus="true"
+        android:textColor="#ff000000"
+        android:editable="true"
+        android:layout_alignTop="@+id/lableUserPwd"
+        android:layout_alignLeft="@+id/editTxtUserNo"
+        android:layout_alignStart="@+id/editTxtUserNo"
+        android:layout_alignRight="@+id/editTxtUserNo"
+        android:layout_alignEnd="@+id/editTxtUserNo" />
+
+</RelativeLayout>
